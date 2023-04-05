@@ -36,8 +36,8 @@ ini_set("display_errors", 1);
   <!-- Nav Bar -->
     <nav class="navtop">
       <div>
-        <h1>My Website</h1>
-                <a href="../home"><i class="fas fa-home"></i>Home</a>
+        <h1>SQL injection</h1>
+                <a href="../home.php"><i class="fas fa-home"></i>Home</a>
         <a href="../profile.php"><i class="fas fa-user-circle"></i>Profile</a>
         <a href="/member/logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
       </div>
@@ -48,7 +48,7 @@ ini_set("display_errors", 1);
         <!-- Sidebar  -->
           <nav id="sidebar" class="border-top border-secondary">
             <div class="list-group">
-              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/freeboard/index">자유게시판</a>
+              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/freeboard/index.php">자유게시판</a>
               <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/login/report">버그및건의</a>
             </div>
           </nav>
@@ -124,7 +124,7 @@ echo "<p>{$_SESSION['username']} 님 환영합니다.</p>";
       <tbody>
         <tr>
           <td width="70"><?php echo $board['idx']; ?></td>
-          <td width="500"><a href="/freeboard/read?idx=<?php echo $board["idx"];?>"><?php echo $title;?></a></td>
+          <td width="500"><a href="/freeboard/read.php?idx=<?php echo $board["idx"];?>"><?php echo $title;?></a></td>
           <td width="120"><?php echo $board['name']?></td>
           <td width="100"><?php echo $board['date']?></td>
           <td width="100"><?php echo $board['hit']; ?></td>
@@ -188,7 +188,7 @@ echo "<p>{$_SESSION['username']} 님 환영합니다.</p>";
   </div>
     <footer class="footer">
     <div class="container mt-3">
-        <span class="text-muted">©2021 • LeeChangHyun</span>
+        <span class="text-muted">©2023 • CAPSTONE2023</span>
         <div class="float-right small"><a href=#>개인정보취급방침</a></div>
     </div>
 </footer>

@@ -37,7 +37,7 @@
     <!-- Nav Bar -->
         <nav class="navtop">
             <div>
-                <h1>My Website</h1>
+                <h1>SQL injection</h1>
                 <a href="/home"><i class="fas fa-home"></i>Home</a>
                 <a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
                 <a href="/member/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
@@ -97,8 +97,8 @@
                         <td><input type="text" size="35" name="email" placeholder="이메일" value=<?php $str= explode("@", $member['email']); $str = $str[0]; echo $str; ?>>@<select name="emaddress"><option value="naver.com">naver.com</option><option value="nate.com">nate.com</option><option value="hanmail.com">hanmail.com</option><option value="daum.net">daum.net</option><option value="gmail.com">gmail.com</option></select></td>  
                     </tr>
                 </table>
-                <button type="button" class="btn btn-primary" onclick="location.href='profile'">뒤로가기</buton>
-                <button type="submit" class="btn btn-success" onclick="location.href='profile_update'">수정하기</buton>
+                <button type="button" class="btn btn-primary" onclick="location.href='profile.php'">뒤로가기</buton>
+                <button type="submit" class="btn btn-success" onclick="location.href='profile_update.php'">수정하기</buton>
 
 
 

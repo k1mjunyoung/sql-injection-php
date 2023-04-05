@@ -16,8 +16,6 @@
 	if(isset($_SESSION['username'])){
 		header( 'Location: home.php' );
 	?>
-
-
 	<a href="/member/logout.php"><input type="button" value="로그아웃" /></a>
 	<?php 
 		}else{

@@ -31,7 +31,7 @@
 		$sql = mq(	"insert into freeboard(name, title, content, date, hit, recom, file) values('".$id."','".$title."','".$content."',now(), 0,0, '".$o_name."')");
 		echo "<script>
     alert('글쓰기 완료되었습니다.');
-    location.href='/freeboard/index';</script>";
+    location.href='/freeboard/index.php';</script>";
 }else{
     echo "<script>
     alert('글쓰기에 실패했습니다.');

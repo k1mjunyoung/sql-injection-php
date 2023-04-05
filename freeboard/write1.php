@@ -61,8 +61,8 @@
                             <body class="loggedin">
                                 <nav class="navtop">
                                     <div>
-                                        <h1>My Website</h1>
-                                        <a href="../home">
+                                        <h1>SQL injection</h1>
+                                        <a href="../home.php">
                                             <i class="fas fa-home"></i>Home</a>
                                         <a href="{{ url_for('profile') }}">
                                             <i class="fas fa-user-circle"></i>Profile</a>

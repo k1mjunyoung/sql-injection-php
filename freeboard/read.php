@@ -46,7 +46,7 @@ $db = new mysqli("localhost", "root", "root", "sql_injection");
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/gallery.css">
-        <?php
+    <?php
 		$bno = $_GET['idx']; /* bno함수에 idx값을 받아와 넣음*/
 		$hit = mysqli_fetch_array(mq("select * from freeboard where idx ='".$bno."'"));
 		$hit = $hit['hit'] + 1;
@@ -59,12 +59,12 @@ $db = new mysqli("localhost", "root", "root", "sql_injection");
 
     <nav class="navtop">
         <div>
-            <h1>My Website</h1>
-            <a href="../home">
+            <h1>SQL injection</h1>
+            <a href="../home.php">
                 <i class="fas fa-home"></i>Home</a>
             <a href="{{ url_for('profile') }}">
                 <i class="fas fa-user-circle"></i>Profile</a>
-            <a href="/member/logout">
+            <a href="/member/logout.php">
                 <i class="fas fa-sign-out-alt"></i>Logout</a>
         </div>
     </nav>
@@ -76,7 +76,7 @@ $db = new mysqli("localhost", "root", "root", "sql_injection");
                     <div class="list-group">
                         <a
                             class="rounded-0 list-group-item list-group-item-action list-group-item-light "
-                            href="/freeboard/index">자유게시판</a>
+                            href="/freeboard/index.php">자유게시판</a>
                         <a
                             class="rounded-0 list-group-item list-group-item-action list-group-item-light "
                             href="/login/report">버그및건의</a>
@@ -112,7 +112,7 @@ $db = new mysqli("localhost", "root", "root", "sql_injection");
                 </div>
                                 <!-- 목록, 수정, 삭제 -->
                                 <div class="row">
-									<div class="col-md-4"><button type="button" class="btn btn-primary btn-sm" onclick="location.href='/freeboard/index'">목록으로</button></div>
+									<div class="col-md-4"><button type="button" class="btn btn-primary btn-sm" onclick="location.href='/freeboard/index.php'">목록으로</button></div>
                                     <div class="col-md-4"><button type="button" class="btn btn-warning btn-sm" onclick="location.href='modify.php?idx=<?php echo $board['idx']; ?>'">수정</button></div>
 									<div class="col-md-4"><button type="button" class="btn btn-danger btn-sm" onclick="location.href='delete.php?idx=<?php echo $board['idx']; ?>'">삭제</button></div>
                                 </div>
@@ -127,7 +127,7 @@ $db = new mysqli("localhost", "root", "root", "sql_injection");
 
         <footer class="footer">
             <div class="container mt-3">
-                <span class="text-muted">©2021 • LeeChangHyun</span>
+                <span class="text-muted">©2023 • CAPSTONE2023</span>
                 <div class="float-right small">
                     <a href="#">개인정보취급방침</a>
                 </div>

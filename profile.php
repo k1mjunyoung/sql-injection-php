@@ -37,10 +37,10 @@
 	<!-- Nav Bar -->
 		<nav class="navtop">
 			<div>
-				<h1>My Website</h1>
-                <a href="/home"><i class="fas fa-home"></i>Home</a>
+				<h1>SQL injection</h1>
+                <a href="/home.php"><i class="fas fa-home"></i>Home</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
-				<a href="/member/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+				<a href="/member/logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
 		<div class="container mt-3">
@@ -49,7 +49,7 @@
 				<!-- Sidebar  -->
           <nav id="sidebar" class="border-top border-secondary">
             <div class="list-group">
-              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/freeboard/index">자유게시판</a>
+              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/freeboard/index.php">자유게시판</a>
               <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/login/report">버그및건의</a>
             </div>
 					</nav>
@@ -90,8 +90,8 @@
                         <td><input type="text" size="35" name="email" placeholder="이메일" value="<?php echo $member['email']; ?>" disabled></td>" 
                     </tr>
                 </table>
-	    <button type="button" class="btn btn-primary" onclick="location.href='home'">홈으로</buton>
-	    <button type="button" class="btn btn-warning" onclick="location.href='profile_update'">수정하기</buton>
+	    <button type="button" class="btn btn-primary" onclick="location.href='home.php'">홈으로</buton>
+	    <button type="button" class="btn btn-warning" onclick="location.href='profile_update.php'">수정하기</buton>
         <?php } ?>
         </form>
     </div>  
@@ -112,7 +112,7 @@
 	
 		<footer class="footer">
     <div class="container mt-3">
-        <span class="text-muted">©2021 • LeeChangHyun</span>
+        <span class="text-muted">©2023 • CAPSTONE2023</span>
         <div class="float-right small"><a href=#>개인정보취급방침</a></div>
     </div>
 </footer>

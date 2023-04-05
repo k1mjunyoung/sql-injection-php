@@ -5,7 +5,4 @@
 	if( is_null($session_username)) {
 		header( 'Location: ../login.php' );
 	}
-
-	
 ?>
-

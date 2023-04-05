@@ -1,8 +1,8 @@
 <?php
-  $username = $_POST[ 'username' ];
-  $password = $_POST[ 'password' ];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
   if ( !is_null( $username ) ) {
-    $jb_conn = mysqli_connect( 'localhost', 'root', 'root', 'sql_injection' );
+    $jb_conn = mysqli_connect('localhost', 'root', 'root', 'sql_injection');
     $jb_sql = "SELECT pw FROM member WHERE id = '" . $username . "';";
     $jb_result = mysqli_query( $jb_conn, $jb_sql );
     while ( $jb_row = mysqli_fetch_array( $jb_result ) ) {
@@ -39,7 +39,9 @@
 		<div class="login">
 			<h1>Login</h1>
 			<div class="links">
-				<a href="login1.php" class="active">Login</a>
+				<!--
+        <a href="login1.php" class="active">Login</a>
+        -->
 				<a href="signUp.html">Register</a>
 			</div>
 			<form action="login.php" method="post">

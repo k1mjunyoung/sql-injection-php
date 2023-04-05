@@ -25,8 +25,8 @@
 	<!-- Nav Bar -->
 		<nav class="navtop">
 			<div>
-				<h1>My Website</h1>
-                <a href="/home"><i class="fas fa-home"></i>Home</a>
+				<h1>SQL injection</h1>
+                <a href="/home.php"><i class="fas fa-home"></i>Home</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
 				<a href="/member/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
@@ -37,24 +37,25 @@
 				<!-- Sidebar  -->
           <nav id="sidebar" class="border-top border-secondary">
             <div class="list-group">
-              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/freeboard/index">자유게시판</a>
-              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/login/report">버그및건의</a>
+              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="./freeboard/index.php">자유게시판</a>
+              <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="/login/report.php">버그및건의</a>
             </div>
 					</nav>
 				</div>
 				<div class="col-sm-12 col-md-9 col-lg-10 p-2">
 					<div class="content">
 
-<h2>공지사항</h2>
+<h2>READ ME</h2>
 <div class="col-11">
     <div class="card">
         <div class="card-body">
             <div class="card-text">
-            <h4>Patch Note</h4>
+            <h4>SERVER</h4>
             <ul>
-                <li> LAPM 설치 및 세팅 <kbd>01/08</kbd></li>
-                <li> 로그인 폼 제작 <kbd>01/09</kbd></li>
-                <li> 회원가입 폼 제작 <kbd>01/10</kbd></li>
+                <li> PHP <kbd>8.2</kbd></li>
+                <li> Apache <kbd>2.4</kbd></li>
+                <li> MySQL <kbd>8.0</kbd></li>
+                <!--
                 <li> 부트스트랩 css 적용<kbd>01/11</kbd></li>
                 <li> 공지사항 OPEN _ Markdown 적용<kbd>01/12</kbd></li>
                 <li> 로그아웃 구현<kbd>01/13</kbd></li>
@@ -62,25 +63,28 @@
                 <li> 게시글 추가기능 구현<kbd>01/16</kbd></li>                
                 <li> 게시글 파일 첨부 구현<kbd>01/18</kbd></li>
                 <li> <del> 보안모듈을 적용하여 안전한 통신(HTTPS)을 지원합니다.</del></li>
-                <li> <del></del></li>
-
+                -->
             </ul>
-            <h4>Bug Fix</h4>
-            <kbd>2021.01</kbd>
+            <h4>UPDATE</h4>
+            <kbd>2023.04.04</kbd>
             <ul>
-            <li> 버그 및 건의 게시판을 이용해주세요</li>
+            <li>웹사이트 빌드</li>
+            </ul>
+            <kbd>2023.04.05</kbd>
+            <ul>
+            <li>페이지 내 링크 수정</li>
             </ul>
             <h4>주의사항</h4>
             <ul>
-            <li> 게시글 삭제 기능이 구현되지 않았으니 민감파일 업로드에 주의하세요</li>
-            <li> 혹시라도 업로드했을 시 관리자 요청 시 삭제해드립니다.</li>
+            <li><del>게시글 삭제 기능이 구현되지 않았으니 민감파일 업로드에 주의하세요</del></li>
+            <li><del>혹시라도 업로드했을 시 관리자 요청 시 삭제해드립니다.</del></li>
             </ul>
             </div>
             <div class="d-flex justify-content-end">
                 
                 <div class="badge badge-light p-2 text-left">
-                    <div class="mb-2">마지막 수정 ADMIN</div>
-                    <div>2021년 02월 01일</div>
+                    <div class="mb-2">마지막 수정: 관리자</div>
+                    <div>2023년 04월 05일</div>
                 </div>
             </div>
         </div>
@@ -96,7 +100,7 @@
 	
 		<footer class="footer">
     <div class="container mt-3">
-        <span class="text-muted">©2021 • LeeChangHyun</span>
+        <span class="text-muted">©2023 • CAPSTONE2023</span>
         <div class="float-right small"><a href=#>개인정보취급방침</a></div>
     </div>
 </footer>

@@ -64,8 +64,8 @@
     <body class="loggedin">
         <nav class="navtop">
             <div>
-                <h1>My Website</h1>
-                <a href="../home">
+                <h1>SQL injection</h1>
+                <a href="../home.php">
                     <i class="fas fa-home"></i>Home</a>
                 <a href="{{ url_for('profile') }}">
                     <i class="fas fa-user-circle"></i>Profile</a>
@@ -154,7 +154,7 @@
         </div>
         <footer class="footer">
             <div class="container mt-3">
-                <span class="text-muted">©2021 • LeeChangHyun</span>
+                <span class="text-muted">©2023 • CAPSTONE2023</span>
                 <div class="float-right small">
                     <a href="#">개인정보취급방침</a>
                 </div>

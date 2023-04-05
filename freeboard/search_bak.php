@@ -38,8 +38,8 @@ ini_set("display_errors", 1);
   <!-- Nav Bar -->
     <nav class="navtop">
       <div>
-        <h1>My Website</h1>
-                <a href="../home"><i class="fas fa-home"></i>Home</a>
+        <h1>SQL injection</h1>
+                <a href="../home.php"><i class="fas fa-home"></i>Home</a>
         <a href="{{ url_for('profile') }}"><i class="fas fa-user-circle"></i>Profile</a>
         <a href="/member/logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
       </div>
