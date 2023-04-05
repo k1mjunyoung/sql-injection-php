@@ -10,7 +10,7 @@ ini_set("display_errors", 1);
   }
   header('Content-Type: text/html; charset=utf-8'); // utf-8인코딩
 
-  $db = new mysqli("localhost","myuser1","if8QV06jvIs8!@","myuser1"); 
+  $db = new mysqli("localhost", "root", "root", "sql_injection"); 
   $db->set_charset("utf8");
 
   function mq($sql)

@@ -28,7 +28,7 @@ if($_SESSION['capt'] != $_POST['captcha']){
 
 
 $encrypted_passwd = password_hash($pw, PASSWORD_DEFAULT);
-$mysqli = mysqli_connect( 'localhost', 'myuser1', 'if8QV06jvIs8!@','myuser1' ); 
+$mysqli = mysqli_connect( 'localhost', 'root', 'root', 'sql_injection' ); 
 $check="SELECT *from member WHERE id='$id'";
 $result=$mysqli->query($check);
 if($result->num_rows==1)

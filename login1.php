@@ -3,7 +3,7 @@
     $password =  $_POST['password'];
     $h_password = password_hash($password, PASSWORD_DEFAULT);
 
-    $jb_conn = mysqli_connect( 'localhost', 'myuser1', 'if8QV06jvIs8!@','myuser1' );
+    $jb_conn = mysqli_connect( 'localhost', 'root', 'root', 'sql_injection' );
     $jb_sql = "SELECT * FROM member WHERE id = '" .$username. "' and pw = '"  .$h_password.  "'   ";
     $jb_result = mysqli_query( $jb_conn, $jb_sql );
       echo "HEllo World";

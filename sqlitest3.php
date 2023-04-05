@@ -1,7 +1,7 @@
 <?php
 $Username = $_POST['id'];
 $Password = $_POST['pw'];
-$Connect = mysqli_connect('localhost', 'myuser1', 'if8QV06jvIs8!@', 'myuser1') or die(1);
+$Connect = mysqli_connect('localhost', 'root', 'root', 'sql_injection') or die(1);
 $sql = "SELECT * FROM member WHERE id = '$Username'";
 $output = mysqli_query($Connect, $sql);
 if (mysqli_num_rows($output) > 0) {

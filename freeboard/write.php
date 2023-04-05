@@ -14,7 +14,7 @@
 
 	
 
-	$connect = mysqli_connect("localhost", "myuser1", "if8QV06jvIs8!@", "myuser1") or die("fail");
+	$connect = mysqli_connect("localhost", "root", "root", "sql_injection") or die("fail");
 	$id = $_SESSION['username'];
 	$title = $_POST['title'];
 	$tmpfile =  $_FILES['b_file']['tmp_name'];

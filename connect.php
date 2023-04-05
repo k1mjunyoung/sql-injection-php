@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('localhost', 'myuser1', 'if8QV06jvIs8!@','myuser1');
+$link = mysqli_connect('localhost', 'root', 'root','sql_injection');
 
 if(!$link)
 {
