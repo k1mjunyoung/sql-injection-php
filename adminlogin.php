@@ -15,9 +15,26 @@
       input, button { font-family: inherit; font-size: inherit; }
     </style>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/css/loginstyle.css"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/css/loginstyle.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/css/common.css" />
+		<script defer type="text/javascript">     
+			function validateForm() {
+				const nameInput = document.getElementById('username').value
+				const passwordInput = document.getElementById('password').value
+				const idExpText = /^[가-힣A-Za-z0-9]/g;
+				const passwordExpText = /['"\\\-#()@;\=*/+]/g;
+				if (expText.test(nameInput) == true) {
+					alert("특수문자를 입력 할수 없습니다.");
+					return false;
+				}
+				if (expText.test(passwordExpText) == true) {
+					alert("해당 특수문자를 입력 할수 없습니다.");
+					return false;
+				}
+				return true;
+			}
+		</script>
   </head>
 
 	<body>
@@ -54,7 +71,7 @@
 </div>
 
 		<div class="login">
-			<form action="adminlogin.php" method="post">
+			<form action="adminlogin.php" method="post" onclick="return validateForm();">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
