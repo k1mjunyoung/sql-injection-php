@@ -31,30 +31,6 @@ ini_set("display_errors", 1);
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/gallery.css">
-    <script defer type="text/javascript">
-      const SQL_ARRAY = ["CREATE", "ALTER", "DROP", "RENAME", "COMMENT", "TRUNCATE", "SELECT", "INSERT", "UPDATE", "DELETE", "MERGE", "CALL", "EXPLAIN PLAN", "LOCK TABLE", "GRANT", "REVOKE", "COMMIT", "ROLLBACK", "SAVEPOINT", "TRANSACTION"]
-      function checkSearchedWord() {
-        const searchInput = document.getElementById('search').value
-        if (searchInput.length > 0) {
-          const expText = /[%=><]/;
-          if (expText.test(searchInput) == true) {
-            alert("해당 특수문자를 입력 할수 없습니다.");
-            searchInput = searchInput.split(expText).join("");
-            return false;
-          }
-          let regex;
-          for (let i = 0; i < SQL_ARRAY.length; i++) {
-            regex = new RegExp(SQL_ARRAY[i], "gi");
-            if (regex.test(searchInput)) {
-              alert("\"" + SQL_ARRAY[i] + "\"와(과) 같은 특정문자로 검색할 수 없습니다.");
-              searchInput = searchInput.replace(regex, "");
-              return false;
-            }
-          }
-        }
-        return true;
-      }
-    </script>
   </head>
   <body class="loggedin">
   <!-- Nav Bar -->
@@ -198,7 +174,7 @@ echo "<p>{$_SESSION['username']} 님 환영합니다.</p>";
    <body>
    <br>
     <div id="search_box">
-    <form action="search.php" method="get" onclick="return checkSearchedWord();">
+    <form action="search.php" method="get">
       <select name="menu">
         <option value="title">제목</option>
         <option value="name">글쓴이</option>
