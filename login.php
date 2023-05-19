@@ -2,7 +2,7 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
   if ( !is_null( $username ) ) {
-    $jb_conn = mysqli_connect('localhost', 'root', 'root', 'sql_injection');
+    $jb_conn = mysqli_connect('localhost', 'root', '1234', 'sql_injection');
     $jb_sql = "SELECT pw FROM member WHERE id = '" . $username . "';";
     $jb_result = mysqli_query( $jb_conn, $jb_sql );
     while ( $jb_row = mysqli_fetch_array( $jb_result ) ) {
@@ -35,15 +35,15 @@
     <link rel="stylesheet" type="text/css" href="/css/common.css" />
     <script defer type="text/javascript">     
       function validateForm() {
-        const nameInput = document.getElementById('username').value
-        const passwordInput = document.getElementById('password').value
+        const nameInput = document.getElementById("username").value;
+        const passwordInput = document.getElementById("password").value;
         const idExpText = /^[가-힣A-Za-z0-9]/g;
         const passwordExpText = /['"\\\-#()@;\=*/+]/g;
-        if (expText.test(nameInput) == true) {
+        if (idExpText.test(nameInput) == true) {
           alert("특수문자를 입력 할수 없습니다.");
           return false;
         }
-        if (expText.test(passwordExpText) == true) {
+        if (passwordExpText.test(passwordInput) == true) {
           alert("해당 특수문자를 입력 할수 없습니다.");
           return false;
         }

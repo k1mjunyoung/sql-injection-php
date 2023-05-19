@@ -1,6 +1,6 @@
 <?php
 
-	$mq = mysqli_connect( 'localhost', 'root', 'root', 'sql_injection' );
+	$mq = mysqli_connect( 'localhost', 'root', '1234', 'sql_injection' );
 
 	$userid = $_POST['userid'];
 	$userpw = password_hash($_POST['userpw'], PASSWORD_DEFAULT);

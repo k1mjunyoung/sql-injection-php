@@ -20,17 +20,17 @@
 		<link rel="stylesheet" type="text/css" href="/css/common.css" />
 		<script defer type="text/javascript">     
 			function validateForm() {
-				const nameInput = document.getElementById('username').value
-				const passwordInput = document.getElementById('password').value
+				const nameInput = document.getElementById("username").value;
+				const passwordInput = document.getElementById("password").value;
 				const idExpText = /^[가-힣A-Za-z0-9]/g;
 				const passwordExpText = /['"\\\-#()@;\=*/+]/g;
-				if (expText.test(nameInput) == true) {
-					alert("특수문자를 입력 할수 없습니다.");
-					return false;
+				if (idExpText.test(nameInput) == true) {
+				alert("특수문자를 입력 할수 없습니다.");
+				return false;
 				}
-				if (expText.test(passwordExpText) == true) {
-					alert("해당 특수문자를 입력 할수 없습니다.");
-					return false;
+				if (passwordExpText.test(passwordInput) == true) {
+				alert("해당 특수문자를 입력 할수 없습니다.");
+				return false;
 				}
 				return true;
 			}
