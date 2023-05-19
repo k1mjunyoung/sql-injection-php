@@ -61,7 +61,7 @@
         -->
 				<a href="signUp.html">Register</a>
 			</div>
-			<form action="login.php" method="post" onclick="return validateForm();">
+			<form action="login.php" method="post" id="myForm">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
@@ -74,4 +74,31 @@
 				<input type="submit" value="Login">
 			</form>
 		</div>
+    <script>
+      document.getElementById("myForm").addEventListener("submit", (event) => {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (!isValidUsername(username)) {
+          event.preventDefault();
+          alert("특수문자를 사용할 수 없습니다.");
+        }
+
+        if (isValidPassword(password)) {
+          event.preventDefault();
+          alert("비밀번호에 해당 특수문자를 사용할 수 없습니다.");
+        }
+      });
+
+      function isValidUsername(username) {
+        const pattern = /^[a-zA-Z가-힣0-9]+$/;
+        return pattern.test(username);
+      }
+
+      function isValidPassword(password) {
+        const pattern = /['"\\\-#()@;\=*/+]/g;
+        return pattern.test(password);
+      }
+    </script>
+
 	</body></html>
