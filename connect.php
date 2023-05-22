@@ -1,9 +1,14 @@
 <?php
 
-$link = mysqli_connect('localhost', 'root', '1234', 'sql_injection');
+$link = mysqli_connect('3.39.97.182', 'test', 'test', 'sql_injection', '3306');
 
-if(!$link)
+if (mysqli_connect_errno())
 {
-	die("Could not connect to the server: " .mysql_error());
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
+$sql = "SELECT VERSION()";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_array($result);
+print_r($row["VERSION()"]);
+?>
 ?>
