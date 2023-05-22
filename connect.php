@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('3.39.97.182', 'root', '1234', 'sql_injection', '3306');
+$link = mysqli_connect('localhost', 'root', '1234', 'sql_injection');
 
 if (mysqli_connect_errno())
 {
