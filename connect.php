@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('3.39.97.182', 'test', 'test', 'sql_injection', '3306');
+$link = mysqli_connect('3.39.97.182', 'root', '1234', 'sql_injection', '3306');
 
 if (mysqli_connect_errno())
 {
@@ -10,5 +10,4 @@ $sql = "SELECT VERSION()";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
 print_r($row["VERSION()"]);
-?>
 ?>
