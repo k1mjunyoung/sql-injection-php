@@ -1,6 +1,6 @@
 <?php
 if (!empty($_POST['id']) && !empty($_POST['pw'])) {
-	$db = mysqli_connect('localhost', 'root', '1234', 'sql_injection') or die('1');
+	$db = mysqli_connect('localhost', 'testID', 'testPW', 'sql_injection') or die('1');
 	$sql = "select * from member where id='".$_POST['id']."'";
 	$result = mysqli_query($db, $sql);
 	echo mysqli_num_rows($result);

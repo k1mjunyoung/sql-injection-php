@@ -2,7 +2,7 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
   if ( !is_null( $username ) ) {
-    $jb_conn = mysqli_connect('localhost', 'root', '1234', 'sql_injection');
+    $jb_conn = mysqli_connect('localhost', 'testID', 'testPW', 'sql_injection');
     $jb_sql = "SELECT pw FROM member WHERE id = '" . $username . "';";
     $jb_result = mysqli_query( $jb_conn, $jb_sql );
     while ( $jb_row = mysqli_fetch_array( $jb_result ) ) {

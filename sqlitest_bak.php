@@ -4,7 +4,7 @@
     $h_password = password_hash($password, PASSWORD_DEFAULT);
       echo "HEllo World<br><br>";
   if ( !is_null( $username ) ) {
-    $jb_conn = mysqli_connect( 'localhost', 'root', '1234', 'sql_injection' );
+    $jb_conn = mysqli_connect( 'localhost', 'testID', 'testPW', 'sql_injection' );
     $jb_sql = "SELECT * FROM sqliLogin1 WHERE id = '$username' and pw = '$password'   ";
     $jb_result = mysqli_query( $jb_conn, $jb_sql );
 

@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('localhost', 'root', '1234', 'sql_injection');
+$link = mysqli_connect('localhost', 'testID', 'testPW', 'sql_injection');
 
 if(!$link)
 {

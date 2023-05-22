@@ -20,15 +20,17 @@ if($id==NULL || $pw==NULL || $name==NULL || $email==NULL) //
     echo "<a href=signUp.html>back page</a>";
     exit();
 }
+/*
 if($_SESSION['capt'] != $_POST['captcha']){
 	echo "자동가입방지문자 입력이 잘못되었습니다.";
 	echo "<a href=signUp.html>back page</a>";
 	exit();
 }
+*/
 
 
 $encrypted_passwd = password_hash($pw, PASSWORD_DEFAULT);
-$mysqli = mysqli_connect( 'localhost', 'root', '1234', 'sql_injection' ); 
+$mysqli = mysqli_connect( 'localhost', 'testID', 'testPW', 'sql_injection' ); 
 $check="SELECT *from member WHERE id='$id'";
 $result=$mysqli->query($check);
 if($result->num_rows==1)

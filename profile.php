@@ -7,7 +7,7 @@
 
     header('Content-Type: text/html; charset=utf-8');
 
-    $db = new mysqli("localhost", "root", "root", "sql_injection");
+    $db = new mysqli("localhost", "testID", "testPW", "sql_injection");
     $db -> set_charset("utf8");
 
     function mq ($sql)
