@@ -1,6 +1,4 @@
-# TOI
-
-Test of Injection
+# TOI, Test of Injection
 
 ## SQL Injection Test Website implemented with PHP
 
