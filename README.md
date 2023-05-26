@@ -7,6 +7,9 @@ Test of Injection
 ## Structure
 
 ```attack```: Automated attack files made with Python
+
 ```safe```: Safe page's code
+
 ```unsafe```: Unsafe page's code
+
 ```index.html```: Main page of TOI
