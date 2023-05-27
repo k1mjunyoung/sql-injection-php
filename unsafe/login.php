@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="/css/loginstyle.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css" />
-    <script defer type="text/javascript">     
+    <script defer type="text/javascript">
       function validateForm() {
         const nameInput = document.getElementById("username").value;
         const passwordInput = document.getElementById("password").value;

@@ -1,9 +1,7 @@
 <?php
-
 	include("connect.php");
-          $message = "";
+    $message = "";
 ?>
-
 
 <!doctype html>
 <html lang="ko">
